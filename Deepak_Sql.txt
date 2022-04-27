@@ -1,0 +1,267 @@
+1--What is Unix?
+UNIX is an operating system which was first developed in the 1960s, and has been under constant development ever since. By operating system, we mean the suite of programs which make the computer work. It is a stable, multi-user, multi-tasking system for servers, desktops and laptops.
+
+UNIX systems also have a graphical user interface (GUI) similar to Microsoft Windows which provides an easy to use environment. However, knowledge of UNIX is required for operations which aren't covered by a graphical program, or for when there is no windows interface available, for example, in a telnet session.
+
+2---Diff between unix and linux?
+Linux is a Unix clone,behaves like Unix but doesn't contain its code.
+.Linux is just the kernel.
+--Unix contain a completely different coding developed by AT&T Labs.
+.Unix is a complete package of Operating system.
+
+3---Which one is better: unix or linux?
+Linux is more flexible and free when compared to true Unix systems and that is why Linux has gained more popularity. While discussing the commands in Unix and Linux, they are not the same but are very much similar. In fact, the commands in each distribution of the same family OS also varies. Solaris, HP, Intel, etc.
+
+4---5 unix commands
+1. "man" Display Manual Pages.
+2. "ls"	 List the contents of a directory.
+3. "cd" - Change Directory
+"mkdir" Make Directory.
+4. "rm" and Remove files
+"rmdir" Remove Directories.
+5."cp"	Copy files
+6. "mv"	Move or Rename Files.
+7. "netscape"and"lynx" Browse Information on the World-wide Web.
+8. "pine" and"pico" email and text editing.
+9. "finger" Get Information About Someone On Unix.
+10. "host"Get Information About a Host Machine.
+"dig" Get Information About a Host Machine.(old command).
+
+5---Can 2 commands be used simultaneously in Unix?
+The semicolon (;) operator.
+6---Syntax for GREP? 
+grep [options] [pattern] [file]
+7---Command to remove the file  and subdirectory?
+.-r : Remove directories and their contents recursively.
+.-f : Force option. In other words, ignore nonexistent files and arguments, never prompt. Dangerous option. Be careful.
+.-v : Verbose option. Show what rm is doing on screen.
+
+8---Feature of LS command?
+ls command comes with so many arguments and features like you can sort files and directories by Date, by Size, able to check hidden files and directories, permissions, inode information and so on.
+
+9---Command used in unix to see who all are connected to the network?
+traceroute
+
+10---LS command?
+ls command is one of the most frequently used command in Linux. I believe ls command is the first command you may use when you get into the command prompt of Linux Box.
+
+11---Sys date command?
+SELECT TO_CHAR
+    (SYSDATE, 'MM-DD-YYYY HH24:MI:SS') "NOW"
+     FROM DUAL;
+
+NOW
+-------------------
+04-13-2001 09:45:51
+
+1--- What is Sql?
+Ans==SQL stands for Structured Query Language. SQL is used to communicate with a database.
+     SQL is the Language that is used to interected with RDBMS.
+     it is the standard language for relational database management systems. SQL statements are used to perform tasks       such as update data on a database, or retrieve data from a database.
+
+2-- Diff between delete and truncate in sql?
+Ans== Delete 
+    It is used to delete specific data
+    We can use with where clause 
+    It locks the table row before deleting the row 
+    We can rollback the changes.
+    It is slower than truncate 
+ 
+  -- Truncate
+     It is used to delete the entire data of the table 
+     It can’t be used with where clause 
+     It locks the entire table
+     We can’t rollback the changes 
+     It is faster than delete 
+
+3-- 5 sql commands
+Ans== There are five types of SQL commands: DDL, DML, DCL, TCL, and DQL.
+
+                i)DQL(Data  Query Language)
+                   --used to query the database for information.
+                   --Get information that is  already stored there.   select
+
+                ii)DDL(Data Defination Language)
+                   --Used for defining database Schemas
+                   --Schemas are the overall Structure of the tables.
+                   -- Create, alter , drop, truncate
+
+                iii)DCL(Data Control Language)s
+                   --Used for controlling access to the data in the database
+                   --user and permissions management  grant rewoke
+
+                iv)DML(Data Manipulation Language)
+                  --Used for Inserting,updating aand deleting data from the database.
+
+                v)TCL(Transection Control language)
+                  --used for commit  and rollback
+
+4-- What is VIEW in sql
+
+Ans=== Views in SQL are kind of virtual tables. A view also has rows and columns as they are in a real table in the database. We can create a view by selecting fields from one or more tables present in the database. A View can either have all the rows of a table or specific rows based on certain condition.
+
+
+5-- How to Fetch and display records of top two salaries without using TOP function.
+
+Ans == Select salaries  from employee order by salaries desc limit 2;
+
+6-- Syntax used for drop command.
+Ans==DROP TABLE table_name;
+
+7-- Is truncate part of ddl?
+ Ans == YES
+
+8-- How do you interact with database?
+Ans == Connect to a SQL Server instance
+       Create a database
+       Create a table in your new database
+       Insert rows into your new table
+       Query the new table and view the results
+       Use the query window table to verify your connection properties
+
+9-- How to construct a simple SQL QUEry? 
+
+Ans == Select ----- from--- where------;
+
+10-- How to sort records in ascending or descending order?
+ Ans ==  In Ascending 
+           Select* from table order by name asc;
+
+         In Descending
+           Select* from table order by name desc;
+
+
+11--INDEXING?
+Ans== Indexing is a way to optimize the performance of a database by minimizing the number of disk accesses required       when a query is processed
+      Indexes are special lookup tables that the database search engine can use to speed up data retrieval.
+
+12-- Uses of Comment 
+Ans== Comments can be used to summarize code or to explain the programmer's intent.
+
+13--ROWNUM?
+ Ans == Rownum is similar to Limit clause in Sql  and return the limited rows.
+
+14-- ROLLBACK −
+Ans == To roll back the changes.
+       ROLLBACK in SQL is a transactional control language which is used to undo the transactions that have not been        saved in database. The command is only be used to undo changes since the last COMMIT.
+
+15--Syntax for update command?
+Ans== UPDATE table_name
+SET column1 = value1, column2 = value2...., columnN = valueN
+WHERE [condition];
+
+16-- Types of joins?
+Ans== Inner Join / Simple Join
+      Left Outer Join / Left Join
+      Right Outer Join / Right Join
+      Full Outer Join
+      Cross Join
+      Self Join
+
+17-- Check constraint
+Ans== The CHECK constraint is used to limit the value range that can be placed in a column.
+
+If you define a CHECK constraint on a column it will allow only certain values for this column.
+
+If you define a CHECK constraint on a table it can limit the values in certain columns based on values in other columns in the row.
+
+ Example ==
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    CHECK (Age>=18)
+);
+
+ALTER TABLE Persons
+ADD CHECK (Age>=18);
+
+
+18--Primary v/s foreign key?
+ Ans== Primary Key:
+       A primary key is used to ensure data in the specific column is unique. It is a column cannot have NULL values.        It is either an existing table column or a column that is specifically generated by the database according to a        defined sequence.
+
+      Foreign Key:
+      A foreign key is a column or group of columns in a relational database table that provides a link between data       in two tables. It is a column (or columns) that references a column (most often the primary key) of another       table.
+
+
+19-- Aggregate functions?
+Ans== In database management, an aggregate function or aggregation function is a function where the values of multiple rows are grouped together to form a single summary value.
+
+
+      1) Count()
+      2) Sum()
+      3) Avg()
+      4) Min()
+      5) Max()
+
+20--Stored procedure?
+Ans== A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
+
+So if you have an SQL query that you write over and over again, save it as a stored procedure, and then just call it to execute it.
+
+You can also pass parameters to a stored procedure, so that the stored procedure can act based on the parameter value(s) that is passed.
+
+
+21 -- DEADLOCK in sql?
+Ans == In a database, a deadlock is a situation in which two or more transactions are waiting for one another to give up locks.
+
+For example, Transaction A might hold a lock on some rows in the Accounts table and needs to update some rows in the Orders table to finish. 
+
+22 --Diff b/w group by and having clause?
+Ans==1. Having Clause :
+Having Clause is basically like the aggregate function with the GROUP BY clause. The HAVING clause is used instead of WHERE with aggregate functions. While the GROUP BY Clause groups rows that have the same values into summary rows. The having clause is used with the where clause in order to find rows with certain conditions. The having clause is always used after the group By clause.
+
+    \2. Group By Clause :
+The GROUP BY clause is often used with aggregate functions (MAX, SUM, AVG) to group the results by one or more columns or In simple words we can say that The GROUP BY clause is used in collaboration with the SELECT statement to arrange required data into groups. 
+The GROUP BY statement groups rows that have the same values. This Statement is used after the where clause. This statement is often used with some aggregate function like SUM, AVG, COUNT atc. to group the results by one or more columns.
+
+23--Different datatypes in sql?
+Ans==
+Exact numeric: bit, tinyint, smallint, int, bigint, decimal, numeric, money and smallmoney
+
+Approximate numeric: Read and float
+
+Date and time: date, DateTime, datetime2, datetimeoffset, smalldatetime, time
+
+Character strings:char, varchar, text
+
+Unicode character strings: Nchar, Nvarchar, Ntext
+
+Binary strings: Binary, image and varbinary
+
+Other data types: Cursor, hierarchyid, sql_variant, table, rowversion, uniqueidentifier, XML, Spatial and geography
+
+24--Diff b/w union and union all?
+
+Ans==
+  --Union :
+Union means joining two or more data sets into a single set. In SQL Server, Union is used to combine two queries into a single result set using the select statements. Union extracts all the rows that are described in the query.
+
+Syntax –
+
+query1 UNION query2
+ select name, rollnumber 
+from student 
+UNION 
+select name, rollnumber 
+from marks
+
+--- Union All :
+A union is used for extracting rows using the conditions specified in the query while Union All is used for extracting all the rows from a set of two tables.
+
+Syntax –
+
+query1 UNION ALL query2s
+
+25---Indexing in sql?
+Indexes are special lookup tables that the database search engine can use to speed up data retrieval. Simply put, an index is a pointer to data in a table. An index in a database is very similar to an index in the back of a book.
+
+CREATE INDEX index_name ON table_name;
+      
+
+
+
+    

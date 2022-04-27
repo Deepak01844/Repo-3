@@ -1,0 +1,17 @@
+->	My project is a final year in b.tech. It is a group project.
+->	Project name is Text Recognition System. It is a Andriod application. It is work in andriod phones that uses 	andriod operating system and combines with Google Vision API for text recgnition and andriod studio for 	implementing the system.
+->	It is OCR based Optical Character Recognition Its working as Handwritten text to converted into a printed 		text of editable form.
+->	Optical Character Recognition (OCR) This technology allows to automatically recognizing characters from input 	image. But its performance depends upon the quality of input image.
+->	The System will be useful for students,bloggers,content writer etc. 
+->	In the text image has defects are Faded text, Distortion of text, Dim light etc. Text image defects can 	remove using for Google Vision API.
+
+Uses of Technologies are:
+
+Google Vision API
+Google firebase
+JSON
+Java
+HTML
+CSS
+XML
+
